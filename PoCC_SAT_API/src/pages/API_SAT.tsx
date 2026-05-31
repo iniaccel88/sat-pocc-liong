@@ -23,8 +23,7 @@ function Liong() { // Liong
     }
     
     useEffect(() => {
-        const queryString = new URLSearchParams({ ...params, api_key: API_KEY }).toString();
-        const serpUrl = `${ENDPOINT}?${queryString}`;
+        const queryString = new URLSearchParams(params).toString();
         fetch(`api/search?${queryString}`)
             .then(response => response.json())
             .then((result: SerpApiResponse) => {
