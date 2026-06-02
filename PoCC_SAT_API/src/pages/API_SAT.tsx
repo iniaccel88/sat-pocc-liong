@@ -39,7 +39,7 @@ function Liong() { // Liong
 
     return (
         <div>
-            <img src={data.jobs_results[0].thumbnail} width="100"/>
+            <img src={data.jobs_results[0].thumbnail} />
             <h2>{data.jobs_results[0].title}</h2>
             <p>{data.jobs_results[0].company_name}</p>
             <p>${data.jobs_results[0].detected_extensions.salary}</p>
