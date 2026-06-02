@@ -39,11 +39,11 @@ function Liong() { // Liong
 
     return (
         <div>
-            <img src={data.jobs_results[1].thumbnail} width="100"/>
-            <h2>{data.jobs_results[1].title}</h2>
-            <p>{data.jobs_results[1].company_name}</p>
-            <p>${data.jobs_results[1].detected_extensions.salary}</p>
-            <p>{data.jobs_results[1].location}</p>
+            <img src={data.jobs_results[0].thumbnail} width="100"/>
+            <h2>{data.jobs_results[0].title}</h2>
+            <p>{data.jobs_results[0].company_name}</p>
+            <p>${data.jobs_results[0].detected_extensions.salary}</p>
+            <p>{data.jobs_results[0].location}</p>
         </div>
     )
 } export default Liong;
